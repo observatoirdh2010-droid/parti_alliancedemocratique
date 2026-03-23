@@ -1,0 +1,332 @@
+
+.menu {
+    background-color: #46a768;  
+    padding: 10px 0;
+    text-align: center; font-size: calc(100% 8);width: 80%;  border: color(a98-rgb #bc2f53 green blue) double; border:focus 10px; margin: 0 auto;
+}
+a:link, a:visited a :hover{
+    color: red;
+    text-decoration: none;
+    padding: 10px 10px;
+    display: inline-block;
+}
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.declaration {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin: 30px auto;
+    max-width: 1000px;
+    font-family: Arial, sans-serif;
+}
+
+.declaration-photo img {
+    width: 260px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.declaration-texte {
+    flex: 1;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.declaration-texte h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+.formulaire {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulaire input,
+.formulaire select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulaire button {
+    padding: 12px;
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulaire button:hover {
+    background-color: #ffcc00;
+    color: black;
+}
+.photo-president {
+    width: 260px;              /* Taille contrôlée */
+    max-width: 100%;           /* Responsive */
+    height: auto;              /* Proportions respectées */
+    display: block;
+    margin: 20px auto;         /* Centre l'image */
+
+    /* --- Cadre autour de l'image --- */
+    border: 4px solid #333;    /* Couleur du cadre */
+    padding: 6px;              /* Espace entre l'image et le cadre */
+    border-radius: 10px;       /* Coins arrondis */
+    background-color: #fff;    /* Fond du cadre */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Ombre élégante */
+}
+/* Texte d'introduction centré */
+.intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Encadré Bankily */
+.bankily-box {
+    max-width: 400px;
+    margin: 0 auto 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Message de confirmation */
+.confirmation {
+    display: none;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #e6ffe6;
+    border: 1px solid #66cc66;
+    text-align: center;
+    font-size: 16px;
+}
+/* Boîte de contact */
+.contact-box {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.contact-box a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-box a:hover {
+    color: #ffcc00;
+}
+
+/* Message de confirmation */
+.confirmation {
+    display: none;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #e6ffe6;
+    border: 1px solid #66cc66;
+    text-align: center;
+    font-size: 16px;
+}
+/* Conteneur des branches */
+.branches-container {
+    max-width: 900px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+/* Carte d'une branche */
+.branche {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.branche h3 {
+    margin-top: 0;
+    color: #1a1a1a;
+}
+
+.branche p {
+    margin-bottom: 0;
+    color: #444;
+}
+/* Conteneur des vidéos */
+.videos-container {
+    max-width: 900px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Boîte vidéo */
+.video-box {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Vidéo responsive */
+.video-box iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 6px;
+}
+
+.video-box p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+.news-container {
+    max-width: 900px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.news-box {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.news-box h3 {
+    margin-top: 0;
+    color: #1a1a1a;
+}
+
+.news-box .date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0055aa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+.videos-container {
+    max-width: 900px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.video-box {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 6px;
+}
+
+.video-box p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+.programme-section {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.programme-section ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.programme-section li {
+    margin-bottom: 8px;
+    color: #333;
+}
+.videos-container {
+    max-width: 900px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.video-box {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 6px;
+}
+
+.video-box p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+
+
+

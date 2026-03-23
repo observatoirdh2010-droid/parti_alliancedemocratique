@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous soutenir</title>
+    <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+
+<h1>Nous soutenir</h1>
+
+<p class="intro">
+    Votre soutien est essentiel pour renforcer notre action et accompagner le changement démocratique en Mauritanie.
+    Vous pouvez contribuer de plusieurs manières.
+</p>
+
+<h2>Soutien financier</h2>
+
+<p class="intro">
+    Pour le moment, les contributions se font via <strong>Bankily – Portefeuille Mobile</strong>.
+    Merci d’envoyer votre soutien au numéro suivant :
+</p>
+
+<div class="bankily-box">
+    <strong>Numéro Bankily :</strong> <span>XXXX XX XX XX</span><br>
+    <strong>Montant :</strong> Libre
+</div>
+
+<form class="formulaire" onsubmit="return afficherConfirmation(event)">
+    <label>Nom complet :</label>
+    <input type="text" required>
+
+    <label>Email :</label>
+    <input type="email" required>
+
+    <label>Montant envoyé :</label>
+    <input type="number" required placeholder="Ex : 10">
+
+    <label>Numéro de transaction Bankily :</label>
+    <input type="text" required placeholder="Ex : 12345678">
+
+    <button type="submit">Confirmer mon soutien</button>
+</form>
+
+<div id="confirmation" class="confirmation">
+    Merci pour votre soutien ! Votre contribution a été enregistrée.
+</div>
+
+<script>
+function afficherConfirmation(event) {
+    event.preventDefault();
+    document.getElementById("confirmation").style.display = "block";
+    return false;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhésion</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h1>Adhésion au mouvement</h1>
+
+<p style="text-align:center; max-width:700px; margin:0 auto 20px;">
+    Rejoignez l’Alliance pour le changement démocratique et participez activement 
+    à la construction d’un avenir meilleur pour la Mauritanie.
+</p>
+
+<form class="formulaire" onsubmit="return afficherConfirmation(event)">
+
+    <label>Nom complet :</label>
+    <input type="text" required>
+
+    <label>Email :</label>
+    <input type="email" required>
+
+    <label>Téléphone :</label>
+    <input type="text">
+
+    <label>Wilaya :</label>
+    <input type="text">
+
+    <h3>Paiement des droits d’adhésion</h3>
+
+    <p style="font-size:14px; color:#444;">
+        Le paiement se fait via <strong>Bankily – Portefeuille Mobile</strong>.
+        Veuillez envoyer le montant de l’adhésion au numéro suivant :
+    </p>
+
+    <div style="padding:10px; border:1px solid #ccc; border-radius:6px; background:#f9f9f9;">
+        <strong>Numéro Bankily :</strong> <span style="color:#1a1a1a;">XXXX XX XX XX</span><br>
+        <strong>Montant :</strong> 5 €
+    </div>
+
+    <label>Numéro de transaction Bankily :</label>
+    <input type="text" required placeholder="Ex : 12345678">
+
+    <button type="submit">Valider l’adhésion</button>
+</form>
+
+<!-- Message de confirmation -->
+<div id="confirmation" style="
+    display:none;
+    margin:20px auto;
+    max-width:600px;
+    padding:15px;
+    border-radius:8px;
+    background:#e6ffe6;
+    border:1px solid #66cc66;
+    text-align:center;
+    font-size:16px;
+">
+    Votre adhésion a été enregistrée avec succès. Merci pour votre confiance !
+</div>
+
+<script>
+function afficherConfirmation(event) {
+    event.preventDefault();
+    document.getElementById("confirmation").style.display = "block";
+    return false;
+}
+</script>
+
+</body>
+</html>

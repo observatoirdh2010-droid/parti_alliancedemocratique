@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    
+    <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+
+<h1>Contact</h1>
+
+<p class="intro">
+    Pour toute question, information ou prise de contact officielle, vous pouvez nous joindre directement via les coordonnées ci‑dessous.
+</p>
+
+<div class="contact-box">
+    <p><strong>Email :</strong> <a href="mailto:seyednaali@yahoo.fr">seyednaali@yahoo.fr</a></p>
+    <p><strong>Téléphone :</strong> <a href="tel:+22246401476">00222 46 40 14 76</a></p>
+</div>
+
+<h2>Formulaire de contact</h2>
+
+<form class="formulaire" onsubmit="return afficherConfirmation(event)">
+    <label>Nom :</label>
+    <input type="text" required>
+
+    <label>Email :</label>
+    <input type="email" required>
+
+    <label>Message :</label>
+    <textarea rows="5" required></textarea>
+
+    <button type="submit">Envoyer</button>
+</form>
+
+<div id="confirmation" class="confirmation">
+    Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.
+</div>
+
+<script>
+function afficherConfirmation(event) {
+    event.preventDefault();
+    document.getElementById("confirmation").style.display = "block";
+    return false;
+}
+</script>
+
+</body>
+</html>
